@@ -1,0 +1,104 @@
+body {
+    --outline: 2px solid black;
+    background: -webkit-linear-gradient(left, rgba(96, 209, 92, 0.8), rgba(218, 223, 212, 0.9));
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    text-align: center;
+}
+#op1-button {
+    font-size: 20px;
+    border-radius: 10px;
+    border-color:  rgb(64, 194, 81);
+    margin: 0 20px 0 0;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+#op1-button:hover {
+    transform: scale(1.10);
+}
+#op2-button {
+    font-size: 20px;
+    border-radius: 10px;
+    border-color:  rgb(64, 194, 81);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    margin: 0 0 0 20px;
+}
+#op2-button:hover {
+    transform: scale(1.10);
+}
+.instructions {
+    margin: 10px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+    background-color: rgb(64, 194, 81);
+}
+.consequences {
+    margin: 10px;
+    text-align: center;
+    font-size: 35px;
+    font-style: oblique;
+    background-color: rgb(155, 240, 166);
+}
+.ending {
+    display: none;
+}
+.start-reset{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#start-button {
+    font-size: 15px;
+    border-radius: 10px;
+    border-color:  rgb(64, 194, 81);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+#start-button:hover {
+    transform: scale(1.10);
+}
+.imageSize{
+    outline: var(--outline);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img {
+    width: 600px;
+    height: 500px;
+    border: 2px solid rgb(64, 194, 81);
+    border-radius: 25px;
+    margin: 20px 0 20px 100px;
+    
+}
+.name-submission {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#submit-button {
+    margin: 0 0 0 15px;
+    font-size: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+
+}
+#submit-button:hover {
+    transform: scale(1.10);
+}
+input {
+    border-radius: 15px;
+    font-size: 15px;
+}
+aside {
+    font-size: 20px;
+    font-style: italic;
+    margin: 0 -130px 0 200px;
+}
+
