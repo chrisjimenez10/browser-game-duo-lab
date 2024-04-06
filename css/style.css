@@ -87,6 +87,7 @@ img {
     border-radius: 15px;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
+    border-color:  rgb(64, 194, 81);
 
 }
 #submit-button:hover {
@@ -95,10 +96,24 @@ img {
 input {
     border-radius: 15px;
     font-size: 15px;
+    border-color:  rgb(64, 194, 81);
 }
 aside {
-    font-size: 20px;
+    /* outline: var(--outline); */
     font-style: italic;
     margin: 0 -130px 0 200px;
 }
+.points-counter {
+    border:  2px dashed rgb(64, 194, 81);;
+    border-radius: 15px;
+    position: absolute;
+    left: -150px;
+    font-size: 20px;
+    color: rgb(160, 160, 23);
+    cursor: pointer;
+    height: 200px;
+    width: 300px;
+}
+
+
 
