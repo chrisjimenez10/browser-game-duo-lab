@@ -63,7 +63,7 @@ body {
     transform: scale(1.10);
 }
 .imageSize{
-    outline: var(--outline);
+    /* outline: var(--outline); */
     display: flex;
     align-items: center;
     justify-content: center;

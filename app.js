@@ -41,6 +41,7 @@ startButton.addEventListener("click", ()=>{ //We chose to convert NEXT button in
     instructions.textContent = instructionText[1]
     consequences.textContent = "";
     img.src = imageUrls[0];
+    sideName.innerText = "";
 })   
 //     if(currentIndex >= instructionText.length){
 //             currentIndex = 0;
@@ -67,7 +68,8 @@ startButton.addEventListener("click", ()=>{ //We chose to convert NEXT button in
             img.src = imageUrls[3]
         }else if(instructions.textContent === instructionText[4]){
             consequences.textContent = "You chose the valley - Oh no! the wolf had set an ambush and got you...GAME OVER";
-            img.src = imageUrls[4]    
+            img.src = imageUrls[4]
+            sideName.innerText = "How unfortunate...you lost!"    
     }
 }) 
 
@@ -89,17 +91,29 @@ startButton.addEventListener("click", ()=>{ //We chose to convert NEXT button in
         }else if(instructions.textContent === instructionText[4]){
             consequences.textContent = "You chose to climb the tree - good move, you got a better viewpoint for an exit and made your way outside of the forest: You Win!";
             img.src = imageUrls[4]
+            sideName.innerText = "Congratulations, you won!";
         }
     })
 
 //Alert Name message + Display current player name on the side
+
+const sideName = document.querySelector("aside"); //---Make side messages come up with each option click---\\\
+
 submitButton.addEventListener("click", ()=>{
     alert(`Welcome ${input.value}, enjoy the game!`);
     sideName.textContent = `Current Player: ${input.value}`;
     input.value = "";
 })
+//Event listener and handler for "Enter Key"
+input.addEventListener("keydown", handleKeyDown); 
+function handleKeyDown(event){ //We use the paramter "event" to access the event object that has detial about the event (we can use this ojbect to access the value of the property - which in this case we are looking for the particular keycode or key: both of which are properties of the even object)
+    if(event.keycode === 13 || event.key === "Enter"){
+        sideName.innerText = `Current Player: ${input.value}`;
+        input.value = "";
+    }
+}
 
-const sideName = document.querySelector("aside");
+
 
 
 
