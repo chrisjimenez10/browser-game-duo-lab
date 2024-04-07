@@ -1,3 +1,4 @@
+//----Browser Game - Chris and Romel Lab----\\
 //----Constants----\\
 const instructions = document.querySelector(".instructions");
 const consequences = document.querySelector(".consequences");
